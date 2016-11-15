@@ -1,0 +1,178 @@
+::selection {
+	background: #67b8de;
+	color: #ffffff;
+}
+
+html {
+	background-color: #e5eaee;
+	background: url('../img/bg.png');
+}
+
+body {
+	width: 400px;
+	margin:0 auto;
+	font-size: 100%;
+	font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+}
+
+.lab {
+	display:none;
+	margin-top:50px;
+	width: 505px;
+	height:285px;
+	box-sizing: border-box;
+	padding:0 20px;
+	border-radius: 4px;
+	float:left;
+}
+
+.project {
+	width: 100px;
+	background: #fff;
+	height: 240px;
+	box-sizing: border-box;
+	padding:0 20px;
+	border-radius: 4px;
+	float:left;
+	margin-right:15px;
+}
+
+.lab h3 {
+	margin-top:0;
+	font-weight: 300;
+}
+
+.info {
+	margin-top:50px;
+	background-color: #fff;
+	width: 305px;
+	height:320px;
+	box-sizing: border-box;
+	padding:20px;
+	border-radius: 4px;
+	float:left;
+}
+
+.intro {
+	text-align:center;
+	border-bottom: 2px solid #c6cdd2;
+}
+
+.info h1 {
+	color: #cf4f4e;
+	font-size:24px;
+	margin-bottom:0;
+}
+
+.info {
+	font-weight: 300;
+}
+
+.info p {
+	margin:0;
+	color: #6a7883;
+	font-size:16px;
+}
+
+.info .city {
+	color: #bdc5cb;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+.touch {
+	margin-top: 7px;
+	font-size: 12px;
+	color: #8f99a0;
+}
+
+.touch a {
+	color: #cf4f4e;
+	font-weight:600;
+	text-decoration: none;
+}
+
+.links {
+	float:left;
+	margin-top:50px;
+	margin-left: 20px;
+	background-color: #fff;
+	width: 50px;
+	height:320px;
+	box-sizing: border-box;
+	padding:10px;
+	border-radius: 4px;
+	text-align:center;
+}
+
+.links a:hover {
+	color:#cf4f4e;
+	opacity:1;
+}
+
+.links a {
+	display:block;
+	color: #4d5a64;
+	margin-bottom: 12px;
+	font-size:20px;
+	opacity:0.5;
+	transition: all .2s ease-in;
+}
+
+.resources {
+	box-sizing: border-box;
+	padding:20px;
+	border-radius: 4px;
+	width: 375px;
+	background-color: #fff;
+	float: left;
+	margin-top: 20px;
+}
+
+.resources h5 {
+	margin:0;
+	color: #6a7883;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.resources a {
+	color: #cf4f4e;
+	font-weight:600;
+	text-decoration: none;
+}
+
+.resources li {
+	font-size: 12px;
+	font-weight: 400;
+	color: #6e7b86;
+	list-style: none;
+}
+
+@media screen and (max-width: 520px) {
+	body {
+		width:100%;
+	}
+	.info {
+		float:none;
+		width:90%;
+		margin: 0 auto;
+	}
+	.links {
+		margin:20px auto;
+		float:none;
+		width:90%;
+		height:auto;
+	}
+	.links:after {
+		display:block;
+		content: "";
+		clear:both;
+	}
+	.links a {
+		width:50%;
+		font-size:50px;
+		opacity:0.9;
+		float:left;
+	}
+}
