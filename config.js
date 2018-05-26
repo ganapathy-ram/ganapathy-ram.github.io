@@ -1,6 +1,19 @@
 (function ($) {
     'use strict';
 
+    function handleChoice(e, ui) {
+        var d = ui.item;
+
+        if (null !== d) {
+            $('#value').html(d.value);
+            $('#category').html(d.category);
+            $('#artist').html(d.artist);
+            $('#musicTitle').html(d.musicTitle);
+            $('#label').html('<pre>' + d.label + '</pre>');
+            $('#data').html(d.data);
+            $('#lastfm').html((d.url);
+        }
+    }
 
     function bindLastFMSearch() {
 
