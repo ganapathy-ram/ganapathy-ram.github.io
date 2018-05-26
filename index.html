@@ -8,7 +8,44 @@
         <link href="bootstrap-theme.css" media="screen" rel="stylesheet" type="text/css"/>
     </head>
   <body>
-  		<h1>Search For Music Information</h1>
+  		<div class="container">
+            <div class="row">
+                <h1>Search For Music Information</h1>
+                <p>Uses <a href="http://last.fm/api">Last.fm API</a> to provide a mechanism to Search for music. Type into the box below.</p>
+
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Artist, Album or Track" name="search" id="search"/>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="" id="artist" class="music-type" checked="checked"/> Artist</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="" id="album" class="music-type" checked="checked"/> Album</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="" id="trach" class="music-type"/> Track</label>
+                    </div>
+                </form>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Key Elements</th>
+                            <th>Information</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Name</td><td id="value"></td></tr>
+                        <tr><td>Category</td><td id="category"></td></tr>
+                        <tr><td>Artist</td><td id="artist"></td></tr>
+                        <tr><td>Song Title</td><td id="musicTitle"></td></tr>
+                        <tr><td>Label</td><td id="label"></td></tr>
+                        <tr><td>Data</td><td id="data"></td></tr>
+                        <tr><td>Last FM Link</td><td id="lastfm"></td></tr>
+                    </tbody>
+                </table>
+
+            </div>
   		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
   </body>
